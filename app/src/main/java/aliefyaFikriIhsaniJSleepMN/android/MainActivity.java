@@ -24,6 +24,8 @@ import aliefyaFikriIhsaniJSleepMN.android.model.Room;
 public class MainActivity extends AppCompatActivity {
 
     private static final Gson gson = new Gson();
+    public static String username;
+    public static String password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,4 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }

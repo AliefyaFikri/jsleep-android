@@ -46,15 +46,13 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Account account = requestAccount();
-                Intent move = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(move);
+                Account account = requestLogin();
             }
         });
 
     }
 
-    protected Account requestAccount(){
+/*    protected Account requestAccount(){
         mApiService.getAccount(3 ).enqueue(new Callback<Account>() {
             @Override
             public void onResponse(Call<Account> call, Response<Account> response) {
@@ -67,6 +65,28 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<Account> call, Throwable t) {
                 Toast.makeText(mContext, "No Account Id=0", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return null;
+    }*/
+
+    protected Account requestLogin(){
+        mApiService.login(username.getText().toString(), password.getText().toString()).enqueue(new Callback<Account>() {
+            @Override
+            public void onResponse(Call<Account> call, Response<Account> response) {
+                if (response.isSuccessful()){
+                    Account account = response.body();
+                    Toast.makeText(mContext, "Login berhasil", Toast.LENGTH_SHORT).show();
+                    Intent login = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(login);
+                }
+
+                Toast.makeText(mContext, response.toString(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<Account> call, Throwable t) {
+                Toast.makeText(mContext, "Password atau email salah", Toast.LENGTH_SHORT).show();
             }
         });
         return null;
