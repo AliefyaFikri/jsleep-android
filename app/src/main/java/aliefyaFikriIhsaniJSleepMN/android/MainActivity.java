@@ -19,13 +19,13 @@ import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
+import aliefyaFikriIhsaniJSleepMN.android.model.Account;
 import aliefyaFikriIhsaniJSleepMN.android.model.Room;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final Gson gson = new Gson();
-    public static String username;
-    public static String password;
+    public static Account accountObject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,13 +72,19 @@ public class MainActivity extends AppCompatActivity {
             startActivity(aboutMeIntent);
             return true;
         }
+        else if(menu.getItemId() == R.id.addbox_button){
+            Intent createRoomIntent = new Intent(MainActivity.this, CreateRoomActivity.class);
+            startActivity(createRoomIntent);
+            return true;
+        }
         else{
             return super.onOptionsItemSelected(menu);
         }
 
 
-
     }
+
+
 
 
 }

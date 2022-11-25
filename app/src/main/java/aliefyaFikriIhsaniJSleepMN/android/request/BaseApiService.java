@@ -10,8 +10,11 @@ public interface BaseApiService {
     Call<Account> getAccount (@Path("id") int id);
 
     @POST("account/login")
-    Call<Account> login (@Query("email") String username, @Query("password") String password);
+    Call<Account> login (@Query("email") String email, @Query("password") String password);
 
     @POST("account/register")
     Call<Account> register (@Query("username") String username, @Query("email") String email, @Query("password") String password);
+
+    @POST("account/{id}/registerRenter")
+    Call<Account> registerRenter (@Path("id") int id, @Query("name") String name, @Query("address") String address, @Query("phone") String phoneNumber);
 }

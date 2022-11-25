@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import aliefyaFikriIhsaniJSleepMN.android.model.Account;
 import aliefyaFikriIhsaniJSleepMN.android.request.BaseApiService;
+import aliefyaFikriIhsaniJSleepMN.android.request.UtilsApi;
 import retrofit2.*;
 
 
@@ -25,6 +26,8 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        mApiService = UtilsApi.getAPIService();
+        mContext = this;
 
         username = findViewById(R.id.NewUsername);
         email = findViewById(R.id.NewEmail);

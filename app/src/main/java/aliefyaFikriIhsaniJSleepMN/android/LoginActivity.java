@@ -76,12 +76,11 @@ public class LoginActivity extends AppCompatActivity {
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if (response.isSuccessful()){
                     Account account = response.body();
+                    MainActivity.accountObject = account;
                     Toast.makeText(mContext, "Login berhasil", Toast.LENGTH_SHORT).show();
                     Intent login = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(login);
                 }
-
-                Toast.makeText(mContext, response.toString(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
