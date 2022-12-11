@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailRoomActivity">
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/CardViewDetailRoom"
+        android:id="@+id/CardViewDR"
         android:layout_width="0dp"
-        android:layout_height="545dp"
+        android:layout_height="485dp"
         android:layout_gravity="center"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="22dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="3dp"
@@ -35,284 +34,475 @@
                 android:id="@+id/DetailRoom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
                 android:text="Detail Room"
-                android:textSize="30sp"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/DetailNameText"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
-                android:layout_marginTop="50dp"
-                android:ems="10"
-                android:text="Name"
-                android:textSize="20sp"
-                android:minHeight="48dp"
-                android:visibility="visible"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:visibility="visible" />
-
-            <TextView
-                android:id="@+id/DetailNameFill"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="164dp"
-                android:layout_marginTop="48dp"
-                android:ems="10"
-                android:minHeight="48dp"
-                android:text="Sheraton"
-                android:textSize="20sp"
-                android:visibility="visible"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:visibility="visible" />
-
-            <TextView
-                android:id="@+id/DetailBedText"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:text="Bed Type"
-                android:textSize="20sp"
-                android:minHeight="48dp"
-                android:visibility="visible"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailNameText"
-                tools:visibility="visible" />
-
-            <TextView
-                android:id="@+id/DetailBedFill"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="164dp"
-                android:layout_marginTop="8dp"
-                android:ems="10"
-                android:minHeight="48dp"
-                android:text="King"
-                android:textSize="20sp"
-                android:visibility="visible"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailNameText"
-                tools:visibility="visible" />
-
-            <TextView
-                android:id="@+id/DetailSizeText"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:text="Size"
-                android:textSize="20sp"
-                android:minHeight="48dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailBedText" />
-
-            <TextView
-                android:id="@+id/DetailSizeFill"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="164dp"
-                android:layout_marginTop="8dp"
-                android:ems="10"
-                android:minHeight="48dp"
-                android:text="21m2"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailBedText" />
-
-            <TextView
-                android:id="@+id/DetailPriceText"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:text="Price"
-                android:textSize="20sp"
-                android:minHeight="48dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailSizeText" />
-
-            <TextView
-                android:id="@+id/DetailPriceFill"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="164dp"
-                android:layout_marginTop="10dp"
-                android:ems="10"
-                android:minHeight="48dp"
-                android:text="Rp. 1.000.000"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailSizeText" />
-
-            <TextView
-                android:id="@+id/FacilityText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="1dp"
-                android:text="Facility"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailPriceText" />
-
-            <RadioGroup
-                android:id="@+id/radioConditionGroup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="97dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginEnd="41dp"
+            <LinearLayout
+                android:id="@+id/layoutName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
                 android:orientation="horizontal"
+                android:weightSum="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/FacilityText"
-                app:layout_constraintTop_toBottomOf="@+id/SizeRoom" />
-
-            <CheckBox
-                android:id="@+id/cbAC"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="AC"
-                app:layout_constraintTop_toBottomOf="@+id/FacilityText"
-                tools:layout_editor_absoluteX="-6dp"
-                tools:layout_editor_absoluteY="304dp" />
-
-            <CheckBox
-                android:id="@+id/cbRefrigerator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="Refrigerator"
-                app:layout_constraintLeft_toRightOf="@+id/cbAC"
-                app:layout_constraintTop_toBottomOf="@+id/DetailPriceText" />
-
-            <CheckBox
-                android:id="@+id/cbWifi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Wifi"
-                android:layout_marginTop="24dp"
-                app:layout_constraintLeft_toRightOf="@+id/cbRefrigerator"
-                app:layout_constraintTop_toBottomOf="@+id/DetailPriceText"
-                tools:layout_editor_absoluteX="154dp"
-                tools:layout_editor_absoluteY="27dp" />
-            />
-
-            <CheckBox
-                android:id="@+id/cbBathub"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bathub"
-                app:layout_constraintTop_toBottomOf="@+id/cbAC"
-                tools:layout_editor_absoluteX="-6dp"
-                tools:layout_editor_absoluteY="343dp" />
-
-
-            <CheckBox
-                android:id="@+id/cbBalcony"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Balcony"
-                app:layout_constraintLeft_toRightOf="@+id/cbBathub"
-                app:layout_constraintTop_toBottomOf="@+id/SizeRoom"
-                android:layout_marginTop="73dp"
-                tools:layout_editor_absoluteX="68dp"
-                tools:layout_editor_absoluteY="345dp" />
-
-            <CheckBox
-                android:id="@+id/cbRestaurant"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Restaurant"
-                app:layout_constraintLeft_toRightOf="@+id/cbBalcony"
-                app:layout_constraintTop_toBottomOf="@+id/DetailPriceText"
-                android:layout_marginTop="73dp"
-                tools:layout_editor_absoluteX="150dp"
-                tools:layout_editor_absoluteY="345dp" />
-
-            <CheckBox
-                android:id="@+id/cbSwimmingPool"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Swimming Pool"
-                app:layout_constraintTop_toBottomOf="@+id/cbBathub"
-                tools:layout_editor_absoluteX="-6dp"
-                tools:layout_editor_absoluteY="382dp" />
-
-            <CheckBox
-                android:id="@+id/cbFitness"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fitness Center"
-                app:layout_constraintTop_toBottomOf="@+id/DetailPriceText"
-                android:layout_marginTop="121dp"
-                app:layout_constraintLeft_toRightOf="@+id/cbSwimmingPool"
-                tools:layout_editor_absoluteX="130dp"
-                tools:layout_editor_absoluteY="393dp" />
-
-            <TextView
-                android:id="@+id/DetailAddressText"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="224dp"
-                android:ems="10"
-                android:minHeight="48dp"
-                android:text="Address"
-                android:textSize="20sp"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailSizeText" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13">
 
-            <TextView
-                android:id="@+id/DetailAddressFill"
-                android:layout_width="323dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="272dp"
-                android:ems="10"
-                android:minHeight="48dp"
-                android:text="Jalan Netlab no 2 Bandung"
-                android:textSize="15sp"
+                <TextView
+                    android:id="@+id/NameText_DR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="500"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/NameFill_DR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="500"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_bedType"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DetailSizeText" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.185">
+
+                <TextView
+                    android:id="@+id/BedText_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="500"
+                    android:text="Bed Type" />
+
+                <TextView
+                    android:id="@+id/BedFill_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="500"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_size"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.24">
+
+                <TextView
+                    android:id="@+id/SizeText_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="500"
+                    android:text="Size" />
+
+                <TextView
+                    android:id="@+id/SizeFill_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="500"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPrice"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.295">
+
+                <TextView
+                    android:id="@+id/PriceText_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="500"
+                    android:text="Price" />
+
+                <TextView
+                    android:id="@+id/PriceFill_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="500"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_address"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.37">
+
+                <TextView
+                    android:id="@+id/AddressText_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="500"
+                    android:text="Address :"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_addressAns"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45">
+
+                <TextView
+                    android:id="@+id/addressAns_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_facility"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.53">
+
+                <TextView
+                    android:id="@+id/FacilityText_DR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="500"
+                    android:text="Facility"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_cb"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="vertical"
+                android:weightSum="900"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.86">
+                <LinearLayout
+                    android:id="@+id/linearLayout_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/AC_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:text="AC" />
+
+                    <CheckBox
+                        android:id="@+id/Refrigerator_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="end"
+                        android:clickable="false"
+                        android:text="Refrigerator" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/Bathtub_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:text="Bathtub" />
+
+                    <CheckBox
+                        android:id="@+id/Balcony_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:layout_gravity="end"
+                        android:text="Balcony" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/SwimmingPool_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:text="Swimming Pool" />
+
+                    <CheckBox
+                        android:id="@+id/Fitness_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:layout_gravity="end"
+                        android:text="Fitness Center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout_row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <CheckBox
+                        android:id="@+id/Wifi_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:text="Wifi" />
+                    <CheckBox
+                        android:id="@+id/Restaurant_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:text="Restaurant" />
+                </LinearLayout>
+            </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/createButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearStart_detail"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="3dp"
-        android:text="Create"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cancelButton"
-        app:layout_constraintStart_toStartOf="@+id/CardViewRoom"
-        app:layout_constraintTop_toBottomOf="@+id/CardViewRoom" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardViewDR">
 
-    <Button
-        android:id="@+id/cancelButton"
-        android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/BookButton_DR"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Book" />
+
+        <Button
+            android:id="@+id/BackButton_DR"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="Back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPayment_detail"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="3dp"
-        android:text="Cancel"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CardViewRoom" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardViewDR"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/TextInfo_DR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/LinearButton_DR"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CVRoomDetail"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/PayButton_DR"
+                android:layout_width="20dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Pay" />
+
+            <Button
+                android:id="@+id/CancelButton_DR"
+                android:layout_width="20dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Cancel Booking" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TextLinear_DR"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CVRoomDetail"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/TextStatus_DR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

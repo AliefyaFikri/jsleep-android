@@ -18,17 +18,30 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Kelas LoginActivity merupakan kelas yang berfungsi untuk melakukan login atau tampilan pertama
+ *
+ * @author  Aliefya Fikri Ihsani
+ * @version 1.0
+ */
 public class LoginActivity extends AppCompatActivity {
+
+    static Account accountObject;
 
     BaseApiService mApiService;
     EditText username,password;
     Context mContext;
 
+    /**
+     * Method onCreate digunakan untuk menginisialisasi komponen-komponen yang ada pada layout
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        mApiService = UtilsApi.getAPIService();
+        mApiService = UtilsApi.getApiService();
         mContext = this;
         username = findViewById(R.id.Username);
         password = findViewById(R.id.Password);
@@ -70,13 +83,16 @@ public class LoginActivity extends AppCompatActivity {
         return null;
     }*/
 
+    /**
+     * Method requestLogin digunakan untuk melakukan request login ke backend
+     */
     protected Account requestLogin(){
         mApiService.login(username.getText().toString(), password.getText().toString()).enqueue(new Callback<Account>() {
             @Override
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if (response.isSuccessful()){
                     Account account = response.body();
-                    MainActivity.accountObject = account;
+                    LoginActivity.accountObject = account;
                     Toast.makeText(mContext, "Login berhasil", Toast.LENGTH_SHORT).show();
                     Intent login = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(login);

@@ -1,18 +1,24 @@
 package aliefyaFikriIhsaniJSleepMN.android.request;
 
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.*;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+/**
+ * Kelas RetrofitClient merupakan kelas yang berfungsi untuk menginisiasi Retrofit
+ */
 
 public class RetrofitClient {
     private static Retrofit retrofit = null;
+
 
     public static Retrofit getClient(String baseUrl) {
         if (retrofit==null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(baseUrl)
                     .addConverterFactory(GsonConverterFactory.create())
-                    .build();
+                    .build();   
         }
         return retrofit;
     }
+
 }

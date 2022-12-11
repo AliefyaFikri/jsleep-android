@@ -1,6 +1,6 @@
 package aliefyaFikriIhsaniJSleepMN.android;
 
-import static aliefyaFikriIhsaniJSleepMN.android.MainActivity.accountObject;
+import static aliefyaFikriIhsaniJSleepMN.android.LoginActivity.accountObject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,19 +26,32 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Kelas About Me digunakan untuk menampilkan informasi akun pengguna, serta informasi renter
+ * jika pengguna memiliki renter
+ *
+ * @author  Aliefya Fikri Ihsani
+ * @version 1.0
+ */
+
 public class About_Me extends AppCompatActivity {
 
     BaseApiService mApiService;
     Context mContext;
     EditText RegisterRenterName, RegisterRenterPhone, RegisterRenterAddress;
 
+    /**
+     * Method onCreate digunakan untuk menginisialisasi komponen-komponen yang ada pada layout
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
         Account account = accountObject;
 
-        mApiService = UtilsApi.getAPIService();
+        mApiService = UtilsApi.getApiService();
         mContext = this;
 
         TextView username = findViewById(R.id.Name);
@@ -78,10 +91,10 @@ public class About_Me extends AppCompatActivity {
             RegisterRenterPhone.setVisibility(View.INVISIBLE);
             RegisterRenterButton.setVisibility(View.INVISIBLE);
             CancelRenterButton.setVisibility(View.INVISIBLE);
-/*            RenterNameFill.setText(LoginActivity.getLoggedAccount().store.name);
-            RenterAddressFill.setText(LoginActivity.getLoggedAccount().store.address);
-            RenterPhoneFill.setText(LoginActivity.getLoggedAccount().store.phoneNumber);
-*/
+            RenterNameFill.setText(account.renter.username);
+            RenterAddressFill.setText(account.renter.address);
+            RenterPhoneFill.setText(account.renter.phoneNumber);
+
         }
 
         RegisterRenter.setOnClickListener(v -> {
@@ -102,7 +115,7 @@ public class About_Me extends AppCompatActivity {
             registerRenterCard.setVisibility(View.INVISIBLE);
             RegisterRenter.setVisibility(View.VISIBLE);
         });
-/*
+
         RegisterRenterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,31 +123,77 @@ public class About_Me extends AppCompatActivity {
             }
         });
 
+        TopUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int amount = Integer.parseInt(TopUp.getText().toString());
+                requestTopUp(amount);
+            }
+        });
+
 
     }
-*/
 
-/*    protected Renter requestRegisterRenter(){
-        mApiService.registerRenter(accountObject.id, RegisterRenterName.getText().toString(), RegisterRenterAddress.getText().toString(), RegisterRenterPhone.getText().toString()).enqueue(new Callback<Renter>() {
+    /**
+     * Method requestRegisterRenter digunakan untuk mengirimkan request register renter ke backend
+     */
+
+    protected Renter requestRegisterRenter(){
+    mApiService.registerRenter(accountObject.id, RegisterRenterName.getText().toString(), RegisterRenterAddress.getText().toString(), RegisterRenterPhone.getText().toString()).enqueue(new Callback<Renter>() {
             @Override
             public void onResponse(@NonNull Call<Renter> call, @NonNull Response<Renter> response) {
                 if (response.isSuccessful()) {
+
                     Renter renter = response.body();
+                    accountObject.renter = renter;
                     Toast.makeText(mContext, "Register Renter Success", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(About_Me.this, MainActivity.class);
                     startActivity(intent);
-
                 } else {
-                    Toast.makeText(mContext, "Register Renter Failed", Toast.LENGTH_SHORT).show();
+
+                        Toast.makeText(mContext, "Fail to Register Renter" , Toast.LENGTH_LONG).show();
+
                 }
             }
 
             @Override
             public void onFailure(@NonNull Call<Renter> call, @NonNull Throwable t) {
-                Toast.makeText(mContext, "Register Renter Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "Fail to Register Renter", Toast.LENGTH_SHORT).show();
+                System.out.println(t);
             }
         });
         return null;
+
     }
-*/}
+
+    /**
+     * Method requestTopUp digunakan untuk mengirimkan request top up ke backend
+     */
+
+    protected void requestTopUp(int amount) {
+        mApiService.topUp(accountObject.id, amount).enqueue(new Callback<Account>() {
+            @Override
+            public void onResponse(@NonNull Call<Account> call, @NonNull Response<Account> response) {
+                if (response.isSuccessful()) {
+                    Account account = response.body();
+                    accountObject.balance = account.balance;
+                    Toast.makeText(mContext, "Top Up Success", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(About_Me.this, MainActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(mContext, "Fail to Top Up", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<Account> call, @NonNull Throwable t) {
+                Toast.makeText(mContext, "Fail to Top Up", Toast.LENGTH_SHORT).show();
+                System.out.println(t);
+            }
+        });
+
+    }
+
+
+
 }

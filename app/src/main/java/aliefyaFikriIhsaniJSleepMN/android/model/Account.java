@@ -1,5 +1,12 @@
 package aliefyaFikriIhsaniJSleepMN.android.model;
 
+/**
+ * Kelas Account merupakan turunan dari kelas Serializable yang berfungsi untuk mendefinisikan atribut-atribut yang dimiliki oleh account user.
+ *
+ * @author Aliefya Fikri Ihsani
+ * @version 1.0
+ */
+
 public class Account extends Serializable {
     public String name;
     public String password;

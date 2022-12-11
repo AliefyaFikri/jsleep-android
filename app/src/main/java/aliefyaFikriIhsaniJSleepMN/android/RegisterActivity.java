@@ -13,23 +13,28 @@ import android.widget.Toast;
 import aliefyaFikriIhsaniJSleepMN.android.model.Account;
 import aliefyaFikriIhsaniJSleepMN.android.request.BaseApiService;
 import aliefyaFikriIhsaniJSleepMN.android.request.UtilsApi;
-import retrofit2.*;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
+/**
+ * Kelas RegisterActivity digunakan untuk mendaftarkan akun pengguna baru
+ */
 
 public class RegisterActivity extends AppCompatActivity {
 
     BaseApiService mApiService;
-    EditText username,email,password;
+    EditText name,email,password;
     Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        mApiService = UtilsApi.getAPIService();
+        mApiService = UtilsApi.getApiService();
         mContext = this;
 
-        username = findViewById(R.id.NewUsername);
+        name = findViewById(R.id.NewUsername);
         email = findViewById(R.id.NewEmail);
         password = findViewById(R.id.NewPassword);
 
@@ -37,21 +42,21 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Account account = requestRegister();
             }
         });
     }
 
     protected Account requestRegister(){
-        mApiService.register(username.getText().toString(), email.getText().toString(), password.getText().toString()).enqueue(new Callback<Account>() {
+        mApiService.register(name.getText().toString(), email.getText().toString(), password.getText().toString()).enqueue(new Callback<Account>() {
             @Override
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if (response.isSuccessful()) {
-                    Account account;
-                    account = response.body();
+                    Account account = response.body();
                     Toast.makeText(mContext, "Register berhasil", Toast.LENGTH_SHORT).show();
-                    Intent login = new Intent(RegisterActivity.this, MainActivity.class);
-                    startActivity(login);
+                    Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                    startActivity(intent);
                 }
             }
 

@@ -26,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name"
+        android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
+        android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,6 +85,7 @@
         android:layout_height="wrap_content"
         android:text="Balance"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
@@ -250,6 +253,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="Name"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -260,6 +264,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:text="Address"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RenterNameText" />
@@ -268,9 +273,10 @@
                 android:id="@+id/RenterPhoneNumberText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="48dp"
                 android:text="Phone Number"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RenterAddressText" />
@@ -300,15 +306,15 @@
                 android:id="@+id/RenterPhoneNumberFill"
                 android:layout_width="148dp"
                 android:layout_height="24dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="7dp"
                 android:text="0877122323"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/RenterPhoneNumberText"
                 app:layout_constraintTop_toBottomOf="@+id/RenterAddressFill" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

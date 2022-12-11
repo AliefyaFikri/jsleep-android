@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-pngs-20:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/layout_activity_about_me.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/layout/activity_about_me.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\layout_activity_detail_room.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\layout\\activity_detail_room.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\menu_top_menu.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\menu\\top_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\drawable_ic_baseline_search_24.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/layout_activity_register.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/layout/activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/layout_activity_main.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/layout_activity_create_room.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/layout/activity_create_room.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\layout_activity_about_me.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\layout\\activity_about_me.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\drawable_ic_baseline_add_box_24.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\drawable\\ic_baseline_add_box_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/menu_top_menu.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/menu/top_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\menu_topmenu.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\menu\\topmenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/drawable_ic_baseline_add_24.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/drawable/ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/layout_activity_detail_room.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/layout/activity_detail_room.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\layout_activity_create_room.xml.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\layout\\activity_create_room.xml"
+    },
+    {
+        "merged": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:/layout_activity_login.xml.flat",
+        "source": "com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:/layout/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-merged_res-25:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\re\\.gradle\\daemon\\7.4\\com.RakhaArgyaZahranJSleepDN.jsleep_android.app-main-27:\\mipmap-mdpi\\ic_launcher_round.webp"
+    }
+]
